@@ -82,9 +82,9 @@
 
 ;; bar
 (setf *window-format* "%m%n%s%c")
-(setf *screen-mode-line-format* (list "[^B%n^b] %W^>%d"))
+(setf *screen-mode-line-format* (list "[^B%g^b] %W^>%d"))
 
-(setf *time-modeline-string* "%a %b %e %I:%M")
+(setf *time-modeline-string* "%a %b %e ^6*%I:%M")
 
 (enable-mode-line (current-screen) (current-head) t)
 
@@ -93,3 +93,6 @@
 (define-key *root-map* (kbd "b") "exec firefox")
 
 (set-font "-misc-fixed-medium-*-normal-*-20-*-*-*-*-*-iso10646-*")
+
+(gnewbg-dynamic "Web")
+(gnewbg-dynamic "Term")

@@ -90,3 +90,6 @@
 
 ;; keybindings
 (define-key *root-map* (kbd "t") "exec st")
+(define-key *root-map* (kbd "b") "exec firefox")
+
+(set-font "-misc-fixed-medium-*-normal-*-20-*-*-*-*-*-iso10646-*")
